@@ -1,76 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-	<title>
-		
-	</title>
+	<meta charset="utf-8">
+	<title>HTML Academy: Нёрдс</title>
 </head>
 <body>
 	<header>
   		<nav>
+  			<img src="img/svg/nerds-logo.svg" alt="" width="" height="">
   			<ul>
   				<li>
-  					<a href="blank.html">СТУДИЯ</a>
+  					<a href="">Студия</a>
   				</li>
   				<li>
-  					<a href="blank.html">КЛИЕНТЫ</a>
+  					<a href="">Клиенты</a>
   				</li>
-  				<li><a href="catalog.html">МАГАЗИН</a></li>
+  				<li><a href="catalog.html">Магазин</a></li>
   				<li>
-  					<a href="blank.html">КОНТАКТЫ</a>
+  					<a href="">Контакты</a>
   				</li>
-  				<li><a href="blank.html">КОРЗИНА</a></li>
   			</ul>
+  			<p>Корзина</p>
   		</nav>
 
   	</header>
   	<main>
-  		<h1>Магазин готовых шаблонов</h1>
   		<section>
-  			<ul>
-  				<li>
-  				<div class="">
-  					<label for="cost"><h4>СТОИМОСТЬ:</h4></label>
-  					ОТ 0 <input type="range" name="cost" id="cost" min="0" max="15000" step="10000"> ДО 15000
+  			<h1>Магазин готовых шаблонов</h1>
+  				<div class="cost">
+  					<h4>Стоимость:</h4>
+  					<label for="cost"></label>
+  					от <input type="text" name="price-low" placeholder="0">
+  					 <input type="range" name="cost" id="cost" min="0" max="15000" step="1" value="10000">
+  					 до <input type="text" name="price-high" placeholder="15000"> 
   				</div>
-  				</li>
-  			<li>
+  			<div class="radio">
   			<form action="">
-  				<h4>СЕТКА:</h4>
-  					<div class="">
-  						<input type="radio" name="grid" id="button1" value="Adaptive">
-  						<label for="button1" checked>Адаптивная</label>
+  				<div class="form_blok"></div>
+  				<h4>Сетка:</h4>
+  						<input type="radio" name="grid" id="button1" value="Adaptive" checked>
+  						<label for="button1">Адаптивная</label>
   						<input type="radio" name="grid" value="Fixed" id="button2">
   						<label for="button2">Фиксированная</label>
   						<input type="radio" name="grid" value="Rubber" id="button3">
   						<label for="button3">Резиновая</label>
-  					</div>
-  			</form>		
-  			</li>
-  			<li>
-  			<h4>ОСОБЕННОСТИ:</h4>
+  			</div>
+  			</form>	
+  			<div class="features">
+  				<h4>Осебенности:</h4>
+  					<form action="">
+  						<p><input type="checkbox" name="Slider" value="Slider" checked>Слайдер</p>
+  						<p><input type="checkbox" name="Advantages" value="Advantages">Блок преемуществ</p>
+  						<p><input type="checkbox" name="News" value="News" checked>Новости</p>
+  						<p><input type="checkbox" name="Gallery" value="Gallery">Галерея</p>
+  						<p><input type="checkbox" name="Basket" value="Basket">Корзина</p>
+  					</form>
+  					<form action="">
+  						<button type="submit" name="show">Показать</button>
+  					</form>
+  			</div>
+  			<div class="">
+  			<h4>Сортировать:</h4>
   				<ul>
-  					<li>Слайдер</li>
-  					<li>Блок преимуществ</li>
-  					<li>Новости</li>
-  					<li>Галерея</li>
-  					<li>Козина</li>
-  				</ul>
-  				</li>
-  				<a href="blank.html">ПОКАЗАТЬ</a>
-  			</ul>
-  		</section>
-  		<section>
-  			<h4>СОРТИРОВАТЬ:</h4>
-  				<ul>
-  						<li>ПО ЦЕНЕ</li>
-  						<li>ПО ТИПУ</li>
-  						<li>ПО НАЗВАНИЮ</li>
-  						<a href="blank.html">
-  						<img src="img/catalog/img-sedona.png" width="360" height="576">
+  						<li><a href="">По цене</a></li>
+  						<li><a href="">По типу</a></li>
+  						<li><a href="">По названию</a></li>
   						</a>
   						<li>
-  							<h4>SEDONA</h4>
+  							<img src="img/catalog/img-sedona.png" width="360" height="576" alt="">
+  							<h4>Sedona</h4>
   							<p>Информационный сайт<br>
   								для туристов
   							</p>
@@ -79,38 +77,47 @@
   							</p>
   						</li>
   						<li>
-  						<img src="img/catalog/img-pink.png " width="358" height="576">
-  						<img src="img/catalog/img-barbershop.png" width="364" height="582">
-  						<img src="img/catalog/img-mishka.png" width="362" height="580">
-  						<img src="img/catalog/img-aplus.png" width="364" height="582">
-  						<img src="img/catalog/img-kvast.png" width="362" height="580">
+  							<li>
+  								<img src="img/catalog/img-pink.png " width="358" height="576" alt="Сайт Седона"></li>
+  							<li>
+  								<img src="img/catalog/img-barbershop.png" width="364" height="582" alt="Сайт Барбершоп"></li>
+  							<li>
+  								<img src="img/catalog/img-mishka.png" width="362" height="580" alt="Сайт Мишка">
+  							</li>
+  							<li>
+  								<img src="img/catalog/img-aplus.png" width="364" height="582" alt="Сайт А Плюс">
+  							</li>
+  							<li>
+  								<img src="img/catalog/img-kvast.png" width="362" height="580" alt="Сайт Кваст">
+  							</li>
   						</li>
   				</ul>
+  			</div>	
+  			</section>
   				<ul>
-      <li>
-        <a>1</a>
-      </li>
-      <li>
-        <a href="#">2</a>
-      </li>
-      <li>
-        <a href="#">3</a>
-      </li>
-      <li>
-        <a href="#">СЛЕДУЮЩАЯ</a>
-      </li>
-    </ul>
-  		</section>
+      				<li>
+        				<a href="">1</a>
+      				</li>
+      				<li>
+        				<a href="#">2</a>
+      				</li>
+      				<li>
+        				<a href="#">3</a>
+      				</li>
+      				<li>
+        				<a href="#">Следующая</a>
+      				</li>
+    			</ul>
   	</main>
   	<footer>
   		<section>
-   			<h4>NЁRDS DESIGN STUDIO</h4>
+   			<h4>Nёrds design studio</h4>
    			<p>
    				191186, Санкт-Петербург, ул. Б.<br> Конюшенная, д. 19/8<br>
    				<br>
    				тел. +7(812)275-75-75<br>
    			</p>
-   			<a href="blank.html">Напишите нам</a>
+   			<a href="">Напишите нам</a>
    		</section>
    		<section>
    			<!-- карта-->
