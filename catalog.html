@@ -1,32 +1,37 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/normalize.css-master/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-	<header>
-  		<nav>
-  			<img src="img/svg/nerds-logo.svg" alt="" width="" height="">
-  			<ul>
-  				<li>
-  					<a href="">Студия</a>
-  				</li>
-  				<li>
-  					<a href="">Клиенты</a>
-  				</li>
-  				<li><a href="catalog.html">Магазин</a></li>
-  				<li>
-  					<a href="">Контакты</a>
-  				</li>
-  			</ul>
-  			<p>Корзина</p>
-  		</nav>
+<body class="page-body">
+<header>
+        <a class="sLogo" href="index.html">
+        <img src="img/svg/nerds-logo.svg" alt="Логотип сайта">
+        </a>
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li>
+            <a href="">Студия</a>
+          </li>
+          <li>
+            <a href="">Клиенты</a>
+          </li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li>
+            <a href="">Контакты</a>
+          </li>
+        </ul>
+        <a href="Корзина">Корзина</a>
+      </nav>
 
-  	</header>
-  	<main>
-  		<section>
+    </header>
+  	<main class="container">
+  		<section class="main-catalog">
   			<h1>Магазин готовых шаблонов</h1>
+        <form action="">
   				<div class="cost">
   					<h4>Стоимость:</h4>
   					<label for="cost"></label>
@@ -35,8 +40,6 @@
   					 до <input type="text" name="price-high" placeholder="15000"> 
   				</div>
   			<div class="radio">
-  			<form action="">
-  				<div class="form_blok"></div>
   				<h4>Сетка:</h4>
   						<input type="radio" name="grid" id="button1" value="Adaptive" checked>
   						<label for="button1">Адаптивная</label>
@@ -45,29 +48,26 @@
   						<input type="radio" name="grid" value="Rubber" id="button3">
   						<label for="button3">Резиновая</label>
   			</div>
-  			</form>	
-  			<div class="features">
+  			<div class="features-checkbox">
   				<h4>Осебенности:</h4>
-  					<form action="">
   						<p><input type="checkbox" name="Slider" value="Slider" checked>Слайдер</p>
-  						<p><input type="checkbox" name="Advantages" value="Advantages">Блок преемуществ</p>
+  						<p><input type="checkbox" name="Advantages" value="Advantages">Блок преимуществ</p>
   						<p><input type="checkbox" name="News" value="News" checked>Новости</p>
   						<p><input type="checkbox" name="Gallery" value="Gallery">Галерея</p>
   						<p><input type="checkbox" name="Basket" value="Basket">Корзина</p>
-  					</form>
-  					<form action="">
-  						<button type="submit" name="show">Показать</button>
-  					</form>
   			</div>
-  			<div class="">
+          <button type="submit" name="show">Показать</button>
+      </form>
+  			<div class="catalog-list">
   			<h4>Сортировать:</h4>
-  				<ul>
+  				<ul class="catalog-item">
   						<li><a href="">По цене</a></li>
   						<li><a href="">По типу</a></li>
   						<li><a href="">По названию</a></li>
-  						</a>
-  						<li>
-  							<img src="img/catalog/img-sedona.png" width="360" height="576" alt="">
+          </ul> 
+          <ul>   
+  						<li class="catalog-item">
+  							<img src="img/catalog/img-sedona.png" alt="">
   							<h4>Sedona</h4>
   							<p>Информационный сайт<br>
   								для туристов
@@ -76,23 +76,58 @@
   							<button type="button">9 900Р</button>
   							</p>
   						</li>
-  						<li>
-  							<li>
-  								<img src="img/catalog/img-pink.png " width="358" height="576" alt="Сайт Седона"></li>
-  							<li>
-  								<img src="img/catalog/img-barbershop.png" width="364" height="582" alt="Сайт Барбершоп"></li>
-  							<li>
-  								<img src="img/catalog/img-mishka.png" width="362" height="580" alt="Сайт Мишка">
+  						<li class="catalog-item">
+  								<img src="img/catalog/img-pink.png " alt="Сайт Седона">
+                    <h4>Sedona</h4>
+                        <p>Информационный сайт<br>
+                        для туристов
+                        </p>
+                        <p>
+                          <button type="button">9 900Р</button>
+                        </p>
+               </li>
+  							<li class="catalog-item">
+  								<img src="img/catalog/img-barbershop.png" alt="Сайт Барбершоп">
+                  <h4>Sedona</h4>
+                        <p>Информационный сайт<br>
+                        для туристов
+                        </p>
+                        <p>
+                          <button type="button">9 900Р</button>
+                        </p>
   							</li>
-  							<li>
-  								<img src="img/catalog/img-aplus.png" width="364" height="582" alt="Сайт А Плюс">
+  							<li class="catalog-item">
+  								<img src="img/catalog/img-mishka.png" alt="Сайт Мишка">
+                  <h4>Sedona</h4>
+                        <p>Информационный сайт<br>
+                        для туристов
+                        </p>
+                        <p>
+                          <button type="button">9 900Р</button>
+                        </p>
   							</li>
-  							<li>
-  								<img src="img/catalog/img-kvast.png" width="362" height="580" alt="Сайт Кваст">
+  							<li class="catalog-item">
+  								<img src="img/catalog/img-aplus.png" alt="Сайт А Плюс">
+                  <h4>Sedona</h4>
+                        <p>Информационный сайт<br>
+                        для туристов
+                        </p>
+                        <p>
+                          <button type="button">9 900Р</button>
+                        </p>
   							</li>
-  						</li>
+  							<li class="catalog-item">
+  								<img src="img/catalog/img-kvast.png" alt="Сайт Кваст">
+                  <h4>Sedona</h4>
+                        <p>Информационный сайт<br>
+                        для туристов
+                        </p>
+                        <p>
+                          <button type="button">9 900Р</button>
+                        </p>
+  							</li>
   				</ul>
-  			</div>	
+  			 </div>	
   			</section>
   				<ul>
       				<li>
@@ -109,42 +144,38 @@
       				</li>
     			</ul>
   	</main>
-  	 <footer>
-   		<section>
-   			<div class="">
-   				<h4>Nёrds design studio</h4>
-   					<p>
-   						191186, Санкт-Петербург, ул. Б.<br> 
-   						Конюшенная, д. 19/8
-   					</p>
-   				<div class="">
-   					<a href="tel:+78122757575">+7(812)275-75-75</a>
-   				</div>
-   				<a href="">Напишите нам</a>
-   			</div>
-   			<div class="navigation">
-   			<!-- карта-->
-   			</div>
-   		</section>
-   		<div class="social">
-    		<ul>
-      			<li>
-        			<a href="#">Вконтакте</a>
-      			</li>
-      			<li>
-        			<a href="#">Фейсбук</a>
-      			</li>
-      			<li>
-        			<a href="#">Инстаграм</a>
-      			</li>
-    		</ul>
-  		</div>
-   		<section>
-   			<h3>Давайте дружить, это выгодно!</h3>
-   			<p>Скидка 10% для друзей из социальных сетей.</p>
-   		</section>
-   		<div class="container">
-</div>
+  	 <footer class="main-footer">
+      <section class="contacts">
+        <div class="contact">
+          <h4>Nёrds design studio</h4>
+              <p>
+              191186, Санкт-Петербург,<br>  
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <a class="contacts-phone" href="tel:+78122757575">+7(812)275-75-75</a>
+          <a class="button" href="">Напишите нам</a>
+        </div>
+        <div class="navigation">
+        <!-- карта-->
+        </div>
+      </section>
+      <div class="social">
+        <ul>
+            <li>
+              <a class="button-social" href="#">Вконтакте</a>
+            </li>
+            <li>
+              <a class="button-social" href="#">Фейсбук</a>
+            </li>
+            <li>
+              <a class="button-social" href="#">Инстаграм</a>
+            </li>
+        </ul>
+      </div>
+      <div>
+        <h3>Давайте дружить, это выгодно!</h3>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
    </footer>
-</body>
+  </body>
 </html>
