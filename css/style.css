@@ -27,14 +27,20 @@
 
 :root{
   --lightgray: #EEEEEE;
-  --white-background:#888888;
+  --white-background:;
   --black-basic-text :#000000;
   --lightblack-basic-text:#283136;
   --button-text:#FFFFFF;
+  --button-color: #FB565A;
   --cart-text:#666666;
   --footer-text:#444444;
   --gradient-text:#E1E1E1;
   --icon-block:#4D4D4D;
+  --green-button:#00CA74;
+  --yellow-button:#EFC849;
+  --guidance:#E74246;
+  --guidance-green:#00BC6C;
+  --guidance-yellow:#EAB534;
 }
 
 
@@ -42,4 +48,126 @@ body{
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 400;
+  color: var(--black-basic-text);
+  background-color: var(--white-background);
+  }
+a{
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+ /*navigation*/
+.main-navigation{
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--black-basic-text);
+}
+.site-navigation{
+  list-style: none;
+}
+.main-navigation a:not(href){
+  color: var(--black-basic-text);
+}
+.main-navigation a:hover,
+.main-navigation a:focus{
+  color:var(--button-color);
+}
+.imagine_1{
+  width: 760px;
+  height: 431px;
+  background-image: url("../img/nerds-index-slide1.png");
+  background-repeat: no-repeat;
+}
+  /*features*/
+.features-list{
+  list-style: none;
+}
+.features-item{
+  text-align: center;
+}
+.features-item h3{
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+}
+/*button*/
+
+.button
+{
+  font-size: 16px;
+  line-height: 18px;
+  font: inherit;
+  color: inherit;
+  text-align: center;
+  color: var(--button-text);
+  background-color: var(--button-color);
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.button-1{
+  background-color:var(--green-button);
+}
+.button-2{
+  background-color: var(--yellow-button);
+}
+.button:hover,
+.button:focus,
+.button:active{
+  background-color: var(--guidance);
+}
+.button-1:hover,
+.button-1:focus,
+.button-1:active{
+  background-color: var(--guidance-green);
+}
+.button-2:hover,
+.button-2:focus,
+.button-2:active{
+  background-color: var(--guidance-yellow);
+}
+.description h2{
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+.description h4{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.Advantage ul{
+  list-style: none;
+}
+.Advantage h4{
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.percent{
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 700;
+}
+.partners-list{
+  list-style: none;
+  text-align: center;
+}
+.contacts h4{
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/*footer*/
+.adress{
+  color: var(--cart-text);
+}
+.contacts-phone{
+  color:inherit;
+}
+.social-list{
+  list-style: none;
 }
