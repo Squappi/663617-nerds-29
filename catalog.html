@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page-body">
-<header>
-        <a class="sLogo" href="index.html">
+    <header class="main-header">
+        <a class="main-logo" href="index.html">
         <img src="img/svg/nerds-logo.svg" alt="Логотип сайта">
         </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li>
-            <a href="">Студия</a>
+            <a href="">Cтудия</a>
           </li>
           <li>
             <a href="">Клиенты</a>
@@ -25,7 +25,7 @@
             <a href="">Контакты</a>
           </li>
         </ul>
-        <a href="Корзина">Корзина</a>
+        <a href="">Корзина</a>
       </nav>
 
     </header>
@@ -47,12 +47,12 @@
           <legend class="header-calculation">Сетка:</legend>
             <ul class="calculation-list">
               <li class="calculation-item">
-                <input type="radio" name="grid" id="button1" value="Adaptive" checked>
-                <label for="button1">Адаптивная</label>
-                <input type="radio" name="grid" value="Fixed" id="button2">
-                <label for="button2">Фиксированная</label>
-                <input type="radio" name="grid" value="Rubber" id="button3">
-                <label for="button3">Резиновая</label>
+                <input class="filter-input-radio" type="radio" name="grid" id="button1" value="Adaptive" checked>
+                <label for="button-adaptive">Адаптивная</label>
+                <input class="filter-input-radio" type="radio" name="grid" value="Fixed" id="button2">
+                <label for="button-fixed">Фиксированная</label>
+                <input class="filter-input-radio" type="radio" name="grid" value="Rubber" id="button3">
+                <label for="button-stretch">Резиновая</label>
             </li>
           </ul>
           </fieldset>
@@ -62,11 +62,11 @@
           <legend class="header-calculation">Особенности:</legend>
             <ul class="calculation-list">
               <li class="calculation-item">
-                <p><input type="checkbox" name="slider" value="Slider" checked>Слайдер</p>
-                <p><input type="checkbox" name="advantages" value="Advantages">Блок преимуществ</p>
-                <p><input type="checkbox" name="news" value="News" checked>Новости</p>
-                <p><input type="checkbox" name="gallery" value="Gallery">Галерея</p>
-                <p><input type="checkbox" name="basket" value="Basket">Корзина</p>
+                <p><input class="filter-input-checkbox" type="checkbox" name="slider" value="Slider" checked>Слайдер</p>
+                <p><input class="filter-input-checkbox" type="checkbox" name="advantages" value="Advantages">Блок преимуществ</p>
+                <p><input class="filter-input-checkbox" type="checkbox" name="news" value="News" checked>Новости</p>
+                <p><input class="filter-input-checkbox" type="checkbox" name="gallery" value="Gallery">Галерея</p>
+                <p><input class="filter-input-checkbox" type="checkbox" name="basket" value="Basket">Корзина</p>
             </li>
             </ul>
           </fieldset>
@@ -171,15 +171,17 @@
               </li>
           </ul>
     </main>
-     <footer class="main-footer">
+      <footer class="main-footer">
       <section class="contacts">
         <div class="contact">
           <h4>Nёrds design studio</h4>
+              <div class="adress">
               <p>
               191186, Санкт-Петербург,<br>  
               ул. Б. Конюшенная, д. 19/8
             </p>
             <a class="contacts-phone" href="tel:+78122757575">+7(812)275-75-75</a>
+          </div>
           <a class="button" href="">Напишите нам</a>
         </div>
         <div class="navigation">
@@ -187,14 +189,14 @@
         </div>
       </section>
       <div class="social">
-        <ul>
-            <li>
-              <a class="button-social" href="#">Вконтакте</a>
+        <ul class="social-list">
+            <li class="social-item">
+              <a class="vkontakte" href="#">Вконтакте</a>
             </li>
-            <li>
+            <li class="social-item">
               <a class="button-social" href="#">Фейсбук</a>
             </li>
-            <li>
+            <li class="social-item">
               <a class="button-social" href="#">Инстаграм</a>
             </li>
         </ul>
