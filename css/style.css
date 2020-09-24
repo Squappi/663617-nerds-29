@@ -39,6 +39,7 @@
   --social-color:#E1E1E1;
   --catalog-color:#D7373B;
   --calculation-color:#D5D5D5;
+  --border-icon: #DBDBDB;
 }
 
 
@@ -62,7 +63,7 @@ img {
   background-color: var(--lightgray);
 }
 .main-logo img:active {
-  background-image: url("../img/svg/shapeLogo.svg");
+  opacity: 0.2;
 }
  /*navigation*/
 }
@@ -169,25 +170,51 @@ color: var(--black-basic-text);
   line-height: 64px;
   font-weight: 700;
 }
+/*partners*/
+
 .partners-list {
   list-style: none;
   text-align: center;
 }
+.academy {
+  opacity: 0.2;
+}
+.borodinsky {
+  opacity: 0.2;
+}
+.pink {
+  opacity: 0.2;
+}
+.miska {
+  opacity: 0.2;
+}
 .academy:hover,
 .academy:focus {
-  background-image: url("../img/svg/activeHTML.svg");
+  opacity: 1;
 }
 .borodinsky:hover,
 .borodinsky:focus {
-  background-image: url("../img/logo/activeBorodinsky.png");
+  opacity: 1;
 }
 .pink:hover,
 .pink:focus {
-  background-image: url("../img/logo/activePink.png");
+  opacity: 1;
 }
 .miska:hover,
 .miska:focus {
-  background-image: url("../img/logo/activeMiska.png");
+  opacity: 1;
+}
+.academy:active {
+  opacity: 0.1;
+}
+.borodinsky:active {
+  opacity: 0.1;
+}
+.pink:active {
+  opacity: 0.1;
+}
+.miska:active {
+  opacity: 0.1;
 }
 .contacts h4 {
   font-size: 18px;
@@ -232,11 +259,11 @@ fieldset {
   padding: 10px 60px;
   border-radius: 3px;
 }
-.calculation:hover,
-.calculation:focus {
+.calculation-button:hover,
+.calculation-button:focus {
   background-color: var(--button-lightgray);
 }
-.calculation:active {
+.calculation-button:active {
  background-color: var(--calculation-color);
  opacity: 0.3;
 }
@@ -316,7 +343,20 @@ fieldset {
   line-height: 18px;
   font-weight: 500;
 }
-
+.page-item a {
+  background-color: var(--lightgray);
+}
+.page-item a:hover,
+.page-item a:focus {
+  background-color: var(--button-lightgray);
+}
+.page-item a:active {
+  background-color: var(--calculation-color);
+  mix-blend-mode: multiply;
+}
+.page-current a {
+  border: 3px solid var(--border-icon);
+}
 /*footer*/
 .address {
   color: var(--cart-text);
