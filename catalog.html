@@ -32,69 +32,81 @@
     <main class="container">
       <section class="main-catalog">
         <h1 class="main-title">Магазин готовых шаблонов</h1>
-        <form action="">
-          <div class="cost">
+        <div class="flex-style">
+          <div class="payment">
+          <form action="">
+            <div class="cost">
+              <fieldset>
+                <legend class="header-calculation">Стоимость:</legend>
+                <label for="cost"></label>
+                от <input type="text" name="price-low" placeholder="0">
+                <input type="range" name="cost" id="cost" min="0" max="15000" step="1" value="10000">
+                до <input type="text" name="price-high" placeholder="15000">
+              </fieldset> 
+            </div>
+          <div class="radio">
             <fieldset>
-              <legend class="header-calculation">Стоимость:</legend>
-              <label for="cost"></label>
-              от <input type="text" name="price-low" placeholder="0">
-              <input type="range" name="cost" id="cost" min="0" max="15000" step="1" value="10000">
-              до <input type="text" name="price-high" placeholder="15000">
-            </fieldset> 
-          </div>
-        <div class="radio">
-          <fieldset>
-          <legend class="header-calculation">Сетка:</legend>
-            <ul class="calculation-list">
-              <li class="calculation-item">
-                <input class="filter-input-radio" type="radio" name="grid" id="button1" value="Adaptive" checked>
-                <label for="button-adaptive">Адаптивная</label>
-                <input class="filter-input-radio" type="radio" name="grid" value="Fixed" id="button2">
-                <label for="button-fixed">Фиксированная</label>
-                <input class="filter-input-radio" type="radio" name="grid" value="Rubber" id="button3">
-                <label for="button-stretch">Резиновая</label>
-            </li>
-          </ul>
-          </fieldset>
-        </div>
-        <div class="features-checkbox">
-          <fieldset>
-          <legend class="header-calculation">Особенности:</legend>
-            <ul class="calculation-list">
-              <li class="calculation-item">
-                <p><input class="filter-input-checkbox" type="checkbox" name="slider" value="Slider" checked>Слайдер</p>
-                <p><input class="filter-input-checkbox" type="checkbox" name="advantages" value="Advantages">Блок преимуществ</p>
-                <p><input class="filter-input-checkbox" type="checkbox" name="news" value="News" checked>Новости</p>
-                <p><input class="filter-input-checkbox" type="checkbox" name="gallery" value="Gallery">Галерея</p>
-                <p><input class="filter-input-checkbox" type="checkbox" name="basket" value="Basket">Корзина</p>
-            </li>
+            <legend class="header-calculation">Сетка:</legend>
+              <ul class="calculation-list">
+                <li class="calculation-item">
+                  <input class="filter-input-radio" type="radio" name="grid" id="button1" value="Adaptive" checked>
+                  <label for="button-adaptive">Адаптивная</label><br>
+                  <input class="filter-input-radio" type="radio" name="grid" value="Fixed" id="button2">
+                  <label for="button-fixed">Фиксированная</label><br>
+                  <input class="filter-input-radio" type="radio" name="grid" value="Rubber" id="button3">
+                  <label for="button-stretch">Резиновая</label><br>
+              </li>
             </ul>
-          </fieldset>
-        </div>
+            </fieldset>
+          </div>
+          <div class="features-checkbox">
+            <fieldset>
+            <legend class="header-calculation">Особенности:</legend>
+              <ul class="calculation-list">
+                <li class="calculation-item">
+                  <p><input class="filter-input-checkbox" type="checkbox" name="slider" value="Slider" checked>Слайдер</p>
+                  <p><input class="filter-input-checkbox" type="checkbox" name="advantages" value="Advantages">Блок преимуществ</p>
+                  <p><input class="filter-input-checkbox" type="checkbox" name="news" value="News" checked>Новости</p>
+                  <p><input class="filter-input-checkbox" type="checkbox" name="gallery" value="Gallery">Галерея</p>
+                  <p><input class="filter-input-checkbox" type="checkbox" name="basket" value="Basket">Корзина</p>
+              </li>
+              </ul>
+            </fieldset>
+          </div>
           <button class="calculation-button" type="submit" name="show">Показать</button>
+          </div>
       </form>
         <div class="catalog-navigation">
+        <div class="sorting">
         <h4 class="header-catalog">Сортировать:</h4>
           <ul class="catalog-list">
               <li><a href="">По цене</a></li>
               <li><a href="">По типу</a></li>
               <li><a href="">По названию</a></li>
-          </ul> 
-          <ul class="catalog-menu">   
+          </ul>
+        </div>
+          <div class="catalog-imagine"> 
+          <ul class="catalog-menu">
+            <div class="catalog-flex">   
               <li class="catalog-item">
-                <img src="img/catalog/img-sedona.png" alt=" Сайт Седона">
-                <a href="" class="catalog-image">
-                 <h4 class="catalog-header">Sedona</h4>
-                </a>
-                <p>Информационный сайт<br>
-                  для туристов
-                </p>
-                <p>
-                <button class="button-catalog" type="button">9 900Р</button>
-                </p>
+                  <img src="img/catalog/img-sedona.png" alt=" Сайт Седона">
+                <div class="top-picture">
+                  <a href="" class="catalog-image">
+                   <h4 class="catalog-header">Sedona</h4>
+                  </a>
+                  <p>Информационный сайт<br>
+                    для туристов
+                  </p>
+                  <p>
+                  <button class="button-catalog" type="button">9 900Р</button>
+                  </p>
+                </div>
               </li>
+            </div>
+            <div class="catalog-flex">
               <li class="catalog-item">
                 <img src="img/catalog/img-pink.png " alt="Сайт Седона">
+                <div class="top-picture">
                   <a href="" class="catalog-image">
                     <h4 class="catalog-header">Sedona</h4>
                   </a>
@@ -104,58 +116,78 @@
                         <p>
                           <button class="button-catalog" type="button">9 900Р</button>
                         </p>
+                  </div>
                </li>
+             </div>
+             <div class="catalog-flex">
                 <li class="catalog-item">
                   <img src="img/catalog/img-barbershop.png" alt="Сайт Барбершоп">
-                  <a href="" class="catalog-image">
-                  <h4 class="catalog-header">Sedona</h4>
-                  </a>
-                        <p>Информационный сайт<br>
-                        для туристов
-                        </p>
-                        <p>
-                          <button class="button-catalog" type="button">9 900Р</button>
-                        </p>
+                  <div class="top-picture">
+                    <a href="" class="catalog-image">
+                    <h4 class="catalog-header">Sedona</h4>
+                    </a>
+                          <p>Информационный сайт<br>
+                          для туристов
+                          </p>
+                          <p>
+                            <button class="button-catalog" type="button">9 900Р</button>
+                          </p>
+                  </div>
                 </li>
+                </div>
+                <div class="catalog-flex">
                 <li class="catalog-item">
                   <img src="img/catalog/img-mishka.png" alt="Сайт Мишка">
-                  <a href="" class="catalog-image">
-                  <h4 class="catalog-header">Sedona</h4>
-                  </a>
-                        <p>Информационный сайт<br>
-                        для туристов
-                        </p>
-                        <p>
-                          <button class="button-catalog" type="button">9 900Р</button>
-                        </p>
+                  <div class="top-picture">
+                    <a href="" class="catalog-image">
+                    <h4 class="catalog-header">Sedona</h4>
+                    </a>
+                          <p>Информационный сайт<br>
+                          для туристов
+                          </p>
+                          <p>
+                            <button class="button-catalog" type="button">9 900Р</button>
+                          </p>
+                    </div>
                 </li>
+                </div>
+                <div class="catalog-flex">
                 <li class="catalog-item">
                    <img src="img/catalog/img-aplus.png" alt="Сайт А Плюс">
-                  <a href="" class="catalog-image">
-                  <h4 class="catalog-header">Sedona</h4>
-                  </a>
-                        <p>Информационный сайт<br>
-                        для туристов
-                        </p>
-                        <p>
-                          <button class="button-catalog" type="button">9 900Р</button>
-                        </p>
+                   <div class="top-picture">
+                    <a href="" class="catalog-image">
+                    <h4 class="catalog-header">Sedona</h4>
+                    </a>
+                          <p>Информационный сайт<br>
+                          для туристов
+                          </p>
+                          <p>
+                            <button class="button-catalog" type="button">9 900Р</button>
+                          </p>
+                    </div>
                 </li>
+                </div>
+                <div class="catalog-flex">
                 <li class="catalog-item">
                   <img src="img/catalog/img-kvast.png" alt="Сайт Кваст">
-                  <a href="" class="catalog-image"> 
-                  <h4 class="catalog-header">Sedona</h4>
-                  </a>
-                        <p>Информационный сайт<br>
-                        для туристов
-                        </p>
-                        <p>
-                          <button class="button-catalog" type="button">9 900Р</button>
-                        </p>
+                  <div class="top-picture">
+                    <a href="" class="catalog-image"> 
+                    <h4 class="catalog-header">Sedona</h4>
+                    </a>
+                          <p>Информационный сайт<br>
+                          для туристов
+                          </p>
+                          <p>
+                            <button class="button-catalog" type="button">9 900Р</button>
+                          </p>
+                  </div>
                 </li>
+                </div>
           </ul>
+        </div>
          </div> 
         </section>
+        <div class="pagination">
           <ul class="pagination-list">
               <li class="page-current"> 
                 <a href="">1</a>
@@ -170,6 +202,8 @@
                 <a href="#">Следующая</a>
               </li>
           </ul>
+          </div>
+        </div>
     </main>
       <footer class="main-footer">
       <section class="contacts">
