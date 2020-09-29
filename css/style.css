@@ -25,6 +25,7 @@
 
 
 body {
+  min-width: 1440px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   min-width: 1440px;
@@ -49,39 +50,37 @@ img {
 .page-body {
   min-height: 100%;
   display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
+ 
 }
 /*header*/
 .main-header {
   background-color: var(--lightgray);
+  display: grid;
 }
 .main-logo{
-  display: flex;
-  justify-content: flex-start;
+
 }
 .main-logo img:active {
   opacity: 0.2;
 }
  /*navigation*/
 
-
 .main-navigation {
-  display: inline;
+  display: grid;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
   color: var(--black-basic-text);
 }
+
 .container-navigation {
-  width: 1440px;
   margin: 0 auto;
   padding: 0 10px;
 }
-.main-wrapper .container-navigation {
-  display: flex;
-  justify-content: space-between;
+.main-wrapper {
+  display: grid;
+  grid-template-columns: 1fr min-content;
 }
 .main-navigation a:not(href) {
   color: var(--black-basic-text);
@@ -386,11 +385,9 @@ fieldset {
 .pagination-list a:not(href) {
   color: var(--black-basic-text);
 }
-.pagination-list ul{
-  display: inline;
-}
 
 .pagination-list {
+  display: flex;
   list-style: none;
   font-size: 16px;
   line-height: 18px;
