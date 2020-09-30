@@ -9,25 +9,22 @@
 </head>
 <body class="page-body">
     <header class="main-header">
+      <div class="grid-container">
         <a class="main-logo" href="index.html">
         <img src="img/svg/nerds-logo.svg" alt="Логотип сайта">
         </a>
       <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li>
-            <a href="">Cтудия</a>
-          </li>
-          <li>
-            <a href="">Клиенты</a>
-          </li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li>
-            <a href="">Контакты</a>
-          </li>
-        </ul>
-        <a href="">Корзина</a>
+            <ul class="site-navigation">
+             <li><a href="">Cтудия</a></li>
+            <li><a href="">Клиенты</a></li>
+              <li><a href="catalog.html">Магазин</a></li>
+              <li><a href="">Контакты</a></li>
+          </ul>
       </nav>
-
+      <div class="basket-navigation">
+          <a class="basket" href="">Корзина</a>
+      </div>
+    </div>
     </header>
     <main class="container">
       <section class="main-catalog">
@@ -46,7 +43,7 @@
             </div>
           <div class="radio">
             <fieldset>
-            <legend class="header-calculation">Сетка:</legend>
+            <legend class="header-calculation header-block">Сетка:</legend>
               <ul class="calculation-list">
                 <li class="calculation-item">
                   <input class="filter-input-radio" type="radio" name="grid" id="button1" value="Adaptive" checked>
@@ -61,7 +58,7 @@
           </div>
           <div class="features-checkbox">
             <fieldset>
-            <legend class="header-calculation">Особенности:</legend>
+            <legend class="header-calculation header-block">Особенности:</legend>
               <ul class="calculation-list">
                 <li class="calculation-item">
                   <p><input class="filter-input-checkbox" type="checkbox" name="slider" value="Slider" checked>Слайдер</p>
@@ -89,7 +86,7 @@
           <ul class="catalog-menu">
             <div class="catalog-flex">   
               <li class="catalog-item">
-                  <img src="img/catalog/img-sedona.png" alt=" Сайт Седона">
+                  <img src="img/catalog/img-sedona.png" width="360" height="580" alt=" Сайт Седона">
                 <div class="top-picture">
                   <a href="" class="catalog-image">
                    <h4 class="catalog-header">Sedona</h4>
@@ -235,7 +232,7 @@
             </li>
         </ul>
       </div>
-      <div>
+      <div class="footer-sale">
         <h3>Давайте дружить, это выгодно!</h3>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
