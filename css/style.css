@@ -330,12 +330,10 @@ img {
   color: var(--cart-text);
   margin-bottom: 45px;
 }
-.payment {
-  width: 260px;
-}
 form {
   padding: 0;
   margin: 0;
+  width: 260px;
   padding-top: 28px;
   outline-offset: -5px;
   outline: 5px solid rgba(0, 255, 255, 0.7);
