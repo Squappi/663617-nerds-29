@@ -39,18 +39,32 @@
           <h1 class="main-title">Магазин готовых шаблонов</h1>
         </div>
         <div class="flex-style">
-          <form action="">
+          <form method="get" action="">
             <div class="cost">
-              <fieldset>
+              <fieldset class="filter-item">
                 <legend class="header-calculation">Стоимость:</legend>
                 <label for="cost"></label>
-                от <input type="text" name="price-low" placeholder="0">
-                <input type="range" name="cost" id="cost" min="0" max="15000" step="1" value="10000">
-                до <input type="text" name="price-high" placeholder="15000">
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div> 
+                  <div class="price-controls">
+                      <label class="min-price">
+                        от <input type="number" name="min-price" value="0">
+                      </label>
+                      <label class="max-price">
+                        до <input type="number" name="max-price" value="15000">
+                      </label>
+                  </div>  
+                </div>
               </fieldset> 
             </div>
           <div class="radio">
-            <fieldset>
+            <fieldset class="filter-item">
             <legend class="header-calculation header-block">Сетка:</legend>
               <ul class="calculation-list">
                 <li class="calculation-item">
@@ -65,7 +79,7 @@
             </fieldset>
           </div>
           <div class="features-checkbox">
-            <fieldset>
+            <fieldset class="filter-item">
             <legend class="header-calculation header-block">Особенности:</legend>
               <ul class="calculation-list">
                 <li class="calculation-item">
@@ -80,7 +94,7 @@
           </div>
           <button class="calculation-button" type="submit" name="show">Показать</button>
       </form>
-      </div>
+      
         <div class="catalog-navigation">
         <div class="sorting">
         <h4 class="header-catalog">Сортировать:</h4>
@@ -94,7 +108,9 @@
           <ul class="catalog-menu"> 
               <li class="catalog-item">
                 <div class="catalog-flex">
-                  <img class="catalog-image" src="img/catalog/img-sedona.png" width="360" height="580" alt=" Сайт Седона">
+                  <figure class="catalog-gallery">
+                    <img class="catalog-image" src="img/catalog/img-sedona.png" width="360" height="580" alt=" Сайт Седона">
+                  </figure>
                   <div class="top-picture">
                     <h4 class="catalog-header">Sedona</h4>
                     <p>Информационный сайт<br>
@@ -108,7 +124,9 @@
               </li>
               <li class="catalog-item">
                 <div class="catalog-flex">
-                  <img class="catalog-image" src="img/catalog/img-pink.png" width="360" height="580" alt="Сайт Седона">
+                  <figure class="catalog-gallery"> 
+                    <img class="catalog-image" src="img/catalog/img-pink.png" width="360" height="580" alt="Сайт Седона">
+                  </figure>
                   <div class="top-picture">
                     <a href="" class="catalog-image">
                       <h4 class="catalog-header">Plink APP</h4>
@@ -124,7 +142,9 @@
                </li>
                 <li class="catalog-item">
                   <div class="catalog-flex">
-                    <img class="catalog-image" src="img/catalog/img-barbershop.png" width="360" height="580" alt="Сайт Барбершоп">
+                    <figure class="catalog-gallery">
+                      <img class="catalog-image" src="img/catalog/img-barbershop.png" width="360" height="580" alt="Сайт Барбершоп">
+                    </figure>
                     <div class="top-picture">
                       <a href="" class="catalog-image">
                         <h4 class="catalog-header">Barbershop</h4>
@@ -140,7 +160,9 @@
                 </li>
                 <li class="catalog-item">
                   <div class="catalog-flex">
-                    <img class="catalog-image" src="img/catalog/img-mishka.png" width="360" height="580" alt="Сайт Мишка">
+                    <figure class="catalog-gallery">
+                      <img class="catalog-image" src="img/catalog/img-mishka.png" width="360" height="580" alt="Сайт Мишка">
+                    </figure>
                     <div class="top-picture">
                       <a href="" class="catalog-image">
                         <h4 class="catalog-header">Mishka</h4>
@@ -156,7 +178,9 @@
                 </li>
                 <li class="catalog-item">
                   <div class="catalog-flex">
-                     <img class="catalog-image" src="img/catalog/img-aplus.png" width="360" height="580" alt="Сайт А Плюс">
+                    <figure class="catalog-gallery">
+                      <img class="catalog-image" src="img/catalog/img-aplus.png" width="360" height="580" alt="Сайт А Плюс">
+                    </figure>
                      <div class="top-picture">
                       <a href="" class="catalog-image">
                         <h4 class="catalog-header">A Plus</h4>
@@ -172,7 +196,9 @@
                 </li>
                 <li class="catalog-item">
                   <div class="catalog-flex">
-                    <img class="catalog-image" src="img/catalog/img-kvast.png" width="360" height="580" alt="Сайт Кваст">
+                    <figure class="catalog-gallery">
+                      <img class="catalog-image" src="img/catalog/img-kvast.png" width="360" height="580" alt="Сайт Кваст">
+                    </figure>
                     <div class="top-picture">
                       <a href="" class="catalog-image"> 
                         <h4 class="catalog-header">Кваст</h4>
@@ -188,7 +214,8 @@
                 </li>
           </ul>
         </div>
-         </div> 
+      </div>
+    </div> 
         </section>
         <div class="pagination">
           <ul class="pagination-list">
