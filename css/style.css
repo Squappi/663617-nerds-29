@@ -23,6 +23,8 @@
   --scale-line: #D7DCDF;
   --bar-color: #ABABAB;
   --back-catalog: #F2F2F2;
+  --form-color: #D7DCDE;
+  --slide-color: #C1C1C1;
 }
 
 *, *::before, *::after {
@@ -149,15 +151,56 @@ img {
   margin: 0 auto;
   height: 431px;
   background-repeat: no-repeat;
-  background-image: url("../img/nerds-index-slide1.png");
   background-position-x: right;
 }
 .banner-container {
   padding-top: 20px;
   width: 538px;
 }
+.slider-list {
+  list-style: none;
+}
+.slide {
+  display: none;
+}
+.slide-current {
+  display: block;
+}
+.slider-controls .current {
+  background-image: url("../img/svg/ellpse.svg");
+  background-repeat: no-repeat;
+}
+.slider-controls {
+  position: absolute;
+  top: 430px;
+  right: 100px;
+  z-index: 20;
+  display: flex;
+  width: 88px;
+  justify-content: space-between;
+}
+.slider-controls button {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--button-text);
+  border: none;
+  cursor: pointer;
+}
+.site-wrapper-1 {
+  background-image: url("../img/nerds-index-slide1.png");
+}
 
+.site-wrapper-2 {
+  background-image: url("../img/nerds-index-slide2.png");
+}
+
+.site-wrapper-3 {
+  background-image: url("../img/nerds-index-slide3.png");
+}
   /*features*/
+
 
 
 .features {
@@ -370,12 +413,9 @@ img {
   color: var(--cart-text);
   margin-bottom: 45px;
 }
-.catalog-item:hover .top-picture {
-  opacity: 1;
-  display: block;
-  transition: 1s;
-}
-.catalog-item:hover .svg-img {
+.catalog-item:hover .top-picture,
+.catalog-item:hover .svg-img,
+.top-picture:hover {
   opacity: 1;
   display: block;
   transition: 1s;
@@ -405,14 +445,10 @@ img {
   text-align: center;
   background-color: var(--lightgray);
 }
-.top-picture:hover {
-  opacity: 1;
-  display: block;
-  transition: 1s;
-}
+
 /* form filter */
 
-form {
+.calculation-form {
   padding: 0;
   margin: 0;
   width: 260px;
@@ -599,12 +635,16 @@ form {
   border-radius: 4px;
   flex-shrink: 0;
   flex-grow: 1;
+  background-size: contain;
 }
 .filter-input:checked + label::before {
   position: absolute;
   top: 0;
   left: 0;
+  width: 25px;
+  border: none;
   background-image: url("../img/svg/checkbox-on.svg");
+  background-size: cover;
 }
 .filter-input-radio:active + label {
   opacity: 0.3;
@@ -776,3 +816,108 @@ margin-right: 250px;
   font-weight: 400;
   color: var(--footer-text);
 }
+
+/* modal form */
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  color: var(--black-basic-text);
+  background-color: var(--button-text);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.modal-login {
+  top: 120px;
+  bottom: auto;
+  width: 960px;
+  height: 590px;
+  padding: 0 100px;
+}
+.modal-login h2 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 53px;
+  padding-top: 65px;
+}
+.modal-flex {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 35px;
+}
+.modal-form {
+  margin-bottom: 10px;
+}
+.modal-form-name input[type="text"], 
+.modal-form-name input[type="email"] {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 360px;
+  height: 50px;
+  border: 2px solid var(--black-basic-text);
+  color: var(--black-basick-text);
+  background-color: var(--button-text);
+}
+.textarea-modal  {
+  width: 760px;
+  margin-bottom: 50px;
+}
+.button-modal {
+  display: inline-block;
+  line-height: 18px;
+  font: inherit;
+  color: inherit;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  padding: 15px 80px 15px 80px; 
+  color: var(--button-text);
+  background-color: var(--button-color);
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+.button-modal:hover,
+.button-modal:focus {
+  background-color: var(--guidance);
+}
+.button-modal:active {
+  color: var(--button-text);
+  background-color: var(--catalog-color); 
+}
+.modal-close {
+  position: absolute;
+  top: 110px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: 9px;
+  width: 27px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--button-color);
+  opacity: 0.3;
+}
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+
+
+
