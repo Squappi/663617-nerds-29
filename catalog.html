@@ -98,7 +98,7 @@
               </ul>
             </fieldset>
           </div>
-          <button class="calculation-button" type="submit" name="show">Показать</button>
+          <button class="calculation-button" type="submit" name="show"><span>Показать</span></button>
       </form>
       
         <div class="catalog-navigation">
@@ -108,6 +108,8 @@
               <li class="catalog-sorting"><a href="">По цене</a></li>
               <li class="catalog-sorting"><a href="">По типу</a></li>
               <li class="catalog-sorting"><a href="">По названию</a></li>
+              <button class="button-sorting-up" type="button"></button>
+              <button class="button-sorting-down" type="button"></button>
           </ul>
         </div>
         <div class="catalog-imagine"> 
@@ -230,7 +232,7 @@
     </main>
     <footer class="main-footer">
       <section class="contacts">
-        <div class="colbasa">
+        <div class="contacts-cart">
           <div class="contact">
               <h4>Nёrds design studio</h4>
                   <div class="address">
@@ -242,9 +244,6 @@
               </div>
               <a class="button button-cart" href="">Напишите нам</a>
           </div>
-        </div>
-        <div class="cart-navigation">
-        <!-- карта-->
         </div>
       </section>
       <div class="footer-social">
@@ -286,7 +285,7 @@
           <div class="modal-flex">
             <div>
              <label for="modal-form">Ваше имя:</label><br>
-             <input class="form-icon-name" type="text" id="form-name" name="name-field" placeholder="Имя Фамилия" required="true">
+             <input class="form-icon-name modal-error" type="text" id="form-name" name="name-field" placeholder="Имя Фамилия" required="true">
           </div>
           <div>
              <label class="modal-form" for="form-email">Ваш email:</label><br>
