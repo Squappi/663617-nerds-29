@@ -609,11 +609,11 @@ img {
   position: absolute;
   top: -2px;
   left: 0;
-  width: 23px;
+  width: 22px;
   height: 23px;
   opacity: 0.4;
   border: 2px solid var(--icon-block);
-  border-radius: 4px;
+  border-radius: 3px;
   flex-shrink: 0;
   flex-grow: 1;
 }
@@ -769,10 +769,14 @@ img {
   border-radius: 0 0 10px 10px;
 }
 .catalog-item:hover .catalog-gallery::before {
+  background-color: var(--button-text);
   opacity: 1;
 }
 .catalog-gallery {
   position: relative;
+  background-color: var(--lightgray);
+  width: 360px;
+  height: 620px;
   margin: 0;
   padding: 0;
   padding-top: 40px;
@@ -781,6 +785,7 @@ img {
 .catalog-gallery::before {
   content: "";
   position: absolute;
+  background-color: var(--button-text);
   top: 0px;
   left: 0;
   width: 360px;
@@ -793,9 +798,6 @@ img {
 .catalog-image {
   width: 360px;
   height: 580px;
-  background-color: var(--lightgray);
-  width: 360px;
-  height: 620px;
   border-radius: 0 0 10px 10px;
 }
 .top-picture {
@@ -1013,7 +1015,7 @@ padding-left: 0;
 
 .modal {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
@@ -1037,11 +1039,8 @@ padding-left: 0;
   cursor: pointer;
   outline: none;
 }
-/* .form-icon-name input:required:invalid {
-  border: 2px solid red;
-} */
 .modal-login {
-  top: 120px;
+  top: 1600px;
   bottom: auto;
   width: 960px;
   height: 590px;
