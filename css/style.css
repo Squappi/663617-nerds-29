@@ -1113,7 +1113,6 @@ padding-left: 0;
 .button-modal:active {
   color: var(--button-text);
   background-color: var(--catalog-color);
-  opacity: 0.3; 
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 .modal-close::before {
