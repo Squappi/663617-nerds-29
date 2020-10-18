@@ -150,12 +150,13 @@ img {
 /* main */
 
 .banner {
+  min-width: 1440px;
   background-color: var(--lightgray);
-  max-width: 1440px;
   margin-bottom: 80px;
 }
 .banner-style {
   display: flex;
+  position: relative;
   align-items: center;
   max-width: 1160px;
   margin: 0 auto;
@@ -184,15 +185,16 @@ img {
 }
 .slider-controls {
   position: absolute;
-  top: 430px;
-  right: 100px;
+  top: 317px;
+  left: 50%;
   z-index: 20;
   display: flex;
-  width: 88px;
+  width: 83px;
   justify-content: space-between;
 }
 .slider-controls button {
   padding: 0;
+  content: "";
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -385,7 +387,8 @@ img {
 
 .partners-list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   border-top: 2px solid var(--lightgray);
@@ -394,6 +397,14 @@ img {
   margin-bottom: 126px;
   list-style: none;
   text-align: center;
+}
+.partners {
+  width: 270px;
+  height: 52px;
+  border-left: 2px solid black;
+}
+.partners-list li:nth-child(4n+1) .partners{
+  border: none;
 }
 .partners-item {
   opacity: 0.2;
@@ -416,7 +427,6 @@ img {
   display: flex;
   align-items: center;
   height: 250px;
-  max-width: 1440px;
   background-color: var(--lightgray);
   margin-bottom: 55px;
 }
@@ -914,9 +924,11 @@ padding-left: 0;
 /*footer*/
 
 .contacts {
-  max-width: 1440px;
+  min-width: 1440px;
   height: 416px;
   background-image: url("../img/logo/map.png");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
   margin-bottom: 68px;
 }
 .contacts h4 {
@@ -1015,7 +1027,7 @@ padding-left: 0;
 
 .modal {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -1040,7 +1052,7 @@ padding-left: 0;
   outline: none;
 }
 .modal-login {
-  top: 1600px;
+  top: 200px;
   bottom: auto;
   width: 960px;
   height: 590px;
