@@ -21,7 +21,7 @@ loginClose.addEventListener("click", function(evt) {
 	modalShow.classList.remove("modal-error");
 });
 function checkName (value){
-	if(!value || value.length < 3){
+	if(!value || value.length < 0){
 		iconName.classList.add("modal-error");
 		return false;
 	}
