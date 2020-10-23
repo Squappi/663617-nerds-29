@@ -28,7 +28,7 @@
     </header>
     <main class="container">
       <div class="main-back">
-          <h1 class="main-title">Магазин готовых шаблонов</h1>
+          <h1 class="main-heading">Магазин готовых шаблонов</h1>
         </div>
       <section class="main-catalog">
         <div class="flex-style">
@@ -60,12 +60,12 @@
             <legend class="header-calculation header-block">Сетка:</legend>
               <ul class="calculation-list">
                 <li class="calculation-item">
-                  <input class="filter-input-radio filter-radio" type="radio" name="grid" id="button-adaptive" value="Adaptive" checked>
-                  <label for="button-adaptive">Адаптивная</label><br>
-                  <input class="filter-input-radio filter-radio" type="radio" name="grid" value="Fixed" id="button-fixed">
-                  <label for="button-fixed">Фиксированная</label><br>
-                  <input class="filter-input-radio filter-radio" type="radio" name="grid" value="Rubber" id="button-stretch">
-                  <label for="button-stretch">Резиновая</label><br>
+                  <input class="filter-radio" type="radio" name="grid" id="button-adaptive" value="Adaptive" checked>
+                  <label for="button-adaptive">Адаптивная</label>
+                  <input class="filter-radio" type="radio" name="grid" value="Fixed" id="button-fixed">
+                  <label for="button-fixed">Фиксированная</label>
+                  <input class="filter-radio" type="radio" name="grid" value="Rubber" id="button-stretch">
+                  <label for="button-stretch">Резиновая</label>
               </li>
             </ul>
             </fieldset>
@@ -75,23 +75,23 @@
             <legend class="header-calculation header-block">Особенности:</legend>
               <ul class="calculation-list">
                 <li class="calculation-item">
-                  <input id="slider" class="filter-input-checkbox filter-input" type="checkbox" name="slider" value="Slider" checked>
+                  <input id="slider" class=" filter-input" type="checkbox" name="slider" value="Slider" checked>
                   <label for="slider" class="filter-option">Слайдер</label>
                 </li>
                 <li class="calculation-item">
-                  <input id="slider-advantages" class="filter-input-checkbox filter-input" type="checkbox" name="advantages" value="Advantages">
+                  <input id="slider-advantages" class=" filter-input" type="checkbox" name="advantages" value="Advantages">
                   <label for="slider-advantages" class="filter-option">Блок преимуществ</label>
                 </li>
                 <li class="calculation-item">
-                  <input id="slider-news" class="filter-input-checkbox filter-input" type="checkbox" name="news" value="News" checked>
+                  <input id="slider-news" class=" filter-input" type="checkbox" name="news" value="News" checked>
                   <label for="slider-news" class="filter-option">Новости</label>
                 </li>
                 <li class="calculation-item">
-                  <input id="slider-gallery" class="filter-input-checkbox filter-input" type="checkbox" name="gallery" value="Gallery">
+                  <input id="slider-gallery" class=" filter-input" type="checkbox" name="gallery" value="Gallery">
                   <label for="slider-gallery" class="filter-option">Галерея</label>
                 </li>
                 <li class="calculation-item">
-                  <input id="slider-basket" class="filter-input-checkbox filter-input" type="checkbox" name="basket" value="Basket">
+                  <input id="slider-basket" class=" filter-input" type="checkbox" name="basket" value="Basket">
                   <label for="slider-basket" class="filter-option">Корзина</label>
                 </li>
               </ul>
@@ -256,22 +256,20 @@
        <h2 class="modal-header">Напишите нам</h2>
        <form class="modal-form-name" action="https://echo.htmlacademy.ru/" method="get">
           <div class="modal-flex">
-            <div>
-             <label for="form-name">Ваше имя:</label><br>
+             <label for="form-name">Ваше имя:</label>
              <input class="form-icon-name modal-error" type="text" id="form-name" name="name-field" placeholder="Имя Фамилия" required>
-          </div>
           <div>
-             <label class="modal-form" for="form-email">Ваш email:</label><br>
+             <label class="modal-form" for="form-email">Ваш email:</label>
              <input class="form-icon-email" type="email" id="form-email" name="our-email" placeholder="email@example.com" required>
           </div>
           </div>
-           <label class="modal-form" for="comment-field">Текст письма:</label><br>
-           <textarea class="textarea-modal" name="comment" id="comment-field" rows="5" placeholder="В свободной форме" required></textarea><br>
+           <label class="modal-form" for="comment-field">Текст письма:</label>
+           <textarea class="textarea-modal" name="comment" id="comment-field" rows="5" placeholder="В свободной форме" required></textarea>
            <button class="button button-modal" type="submit"><span>Отправить</span></button>
            <button class="modal-close" type="button" aria-label="Закрыть"></button>
        </form>
    </section>
-   <script src="js/script.js"></script>
+   <!-- <script src="js/script.js"></script> -->
   </body>
 </html>
 
