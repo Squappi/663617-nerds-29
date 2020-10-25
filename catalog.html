@@ -58,41 +58,45 @@
           <div class="radio">
             <fieldset class="filter-item">
             <legend class="header-calculation header-block">Сетка:</legend>
-              <ul class="calculation-list">
+              <ul class="calculation-list grid">
                 <li class="calculation-item">
                   <input class="filter-radio" type="radio" name="grid" id="button-adaptive" value="Adaptive" checked>
-                  <label for="button-adaptive">Адаптивная</label>
+                  <label for="button-adaptive"><span>Адаптивная</span></label> 
+                </li>
+                <li class="calculation-item">
                   <input class="filter-radio" type="radio" name="grid" value="Fixed" id="button-fixed">
-                  <label for="button-fixed">Фиксированная</label>
+                  <label for="button-fixed"><span>Фиксированная</span></label>
+                </li>
+                <li class="calculation-item">
                   <input class="filter-radio" type="radio" name="grid" value="Rubber" id="button-stretch">
-                  <label for="button-stretch">Резиновая</label>
-              </li>
+                  <label for="button-stretch"><span>Резиновая</span></label>
+                </li>
             </ul>
             </fieldset>
           </div>
           <div class="features-checkbox">
             <fieldset class="filter-item">
             <legend class="header-calculation header-block">Особенности:</legend>
-              <ul class="calculation-list">
+              <ul class="calculation-list feature">
                 <li class="calculation-item">
                   <input id="slider" class=" filter-input" type="checkbox" name="slider" value="Slider" checked>
-                  <label for="slider" class="filter-option">Слайдер</label>
+                  <label for="slider" class="filter-option"><span>Слайдер</span></label>
                 </li>
                 <li class="calculation-item">
                   <input id="slider-advantages" class=" filter-input" type="checkbox" name="advantages" value="Advantages">
-                  <label for="slider-advantages" class="filter-option">Блок преимуществ</label>
+                  <label for="slider-advantages" class="filter-option"><span>Блок преимуществ</span></label>
                 </li>
                 <li class="calculation-item">
                   <input id="slider-news" class=" filter-input" type="checkbox" name="news" value="News" checked>
-                  <label for="slider-news" class="filter-option">Новости</label>
+                  <label for="slider-news" class="filter-option"><span>Новости</span></label>
                 </li>
                 <li class="calculation-item">
                   <input id="slider-gallery" class=" filter-input" type="checkbox" name="gallery" value="Gallery">
-                  <label for="slider-gallery" class="filter-option">Галерея</label>
+                  <label for="slider-gallery" class="filter-option"><span>Галерея</span></label>
                 </li>
                 <li class="calculation-item">
                   <input id="slider-basket" class=" filter-input" type="checkbox" name="basket" value="Basket">
-                  <label for="slider-basket" class="filter-option">Корзина</label>
+                  <label for="slider-basket" class="filter-option"><span>Корзина</span></label>
                 </li>
               </ul>
             </fieldset>
@@ -104,11 +108,13 @@
         <div class="sorting">
         <h4 class="header-sorting">Сортировать:</h4>
             <div class="catalog-list">
-              <button class="catalog-sorting">По цене</button>
-              <button class="catalog-sorting">По типу</button>
-              <button class="catalog-sorting">По названию</button>
-              <button class="button-sorting-up" type="button"></button>
+              <div class="button-catalog-sorting">
+                <button class="catalog-sorting">По цене</button>
+                <button class="catalog-sorting">По типу</button>
+                <button class="catalog-sorting">По названию</button>
+              </div>
               <button class="button-sorting-down" type="button"></button>
+              <button class="button-sorting-up" type="button"></button>
             </div>
         </div>
         <div class="catalog-imagine"> 
@@ -121,7 +127,7 @@
                     <a href="" class="catalog-link">
                       <h4>Sedona</h4>
                     </a>  
-                    <p>Информационный сайт для туристов</p>
+                    <p>Информационный сайт<br> для туристов</p>
                       <button class="button-catalog" type="button">9 900Р</button>
                   </div>
               </li>
@@ -145,7 +151,7 @@
                       <a href="" class="catalog-link">
                         <h4>Barbershop</h4>
                       </a>
-                        <p>Сайт салона красоты. Для мужчин, да.</p>
+                        <p>Сайт салона красоты.<br> Для мужчин, да.</p>
                           <button class="button-catalog" type="button">9 900Р</button>
                     </div>
                 </li>
@@ -157,7 +163,7 @@
                       <a href="" class="catalog-link">
                         <h4>Mishka</h4>
                       </a>
-                          <p>Интернет-магазин вязаных игрушек</p>
+                          <p>Интернет-магазин<br> вязаных игрушек</p>
                             <button class="button-catalog" type="button">9 900Р</button>
                       </div>
                 </li>
@@ -214,7 +220,7 @@
                   191186, Санкт-Петербург,<br>  
                   ул. Б. Конюшенная, д. 19/8
                 </p>
-                <a class="contacts-phone" href="tel:+78122757575">тел. +7(812) 275-75-75</a>
+                <a class="contacts-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
               <a class="button button-cart" href="">Напишите нам</a>
           </div>
         </div>
@@ -269,7 +275,7 @@
            <button class="modal-close" type="button" aria-label="Закрыть"></button>
        </form>
    </section>
-   <!-- <script src="js/script.js"></script> -->
+   <script src="js/script.js"></script>
   </body>
 </html>
 

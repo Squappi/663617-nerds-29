@@ -1,5 +1,5 @@
 const slider = document.querySelector(".banner-style");
-const slides = document.getElementsByClassName("slider-item");
+const slides = document.getElementsByClassName("slide");
 const dods = document.querySelector(".slider-controls").children;
 
 let current = 0;
