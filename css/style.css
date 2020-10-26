@@ -75,7 +75,7 @@ img {
   grid-template-columns: min-content 1fr min-content;
   align-items: center;
   margin-top: 44px;
-  margin-bottom: -18px;
+  margin-bottom: -15px;
 }
 .main-logo{
  width: 160px;
@@ -162,20 +162,20 @@ img {
 }
 .slider-item-0,
 .slider-item-1 {
-  padding-top: 77px;
+  padding-top: 71px;
 }
 .slider-item-0 h1 {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 .slider-item-0 p {
   margin-bottom: 39px;
 }
 .slider-item-1 p {
   max-width: 425px;
-  margin-bottom: 26px;
+  margin-bottom: 29px;
 }
 .slider-item-2 {
-  padding-top: 77px;
+  padding-top: 72px;
 }
 .slider-item-2 h1 {
   max-width: 460px;
@@ -195,7 +195,7 @@ img {
   position: relative;
   max-width: 1160px;
   margin: 0 auto;
-  min-height: 429px;
+  min-height: 425px;
   background-repeat: no-repeat;
 }
 
@@ -222,7 +222,7 @@ img {
 }
 .slider-controls {
   position: absolute;
-  top: 316px;
+  top: 311px;
   left: 46%;
   z-index: 20;
   display: flex;
@@ -248,17 +248,17 @@ img {
 .site-wrapper-0 {
   background-image: url("../img/nerds-index-slide1.png");
   background-position-x: 397px;
-  background-position-y: -2px;
+  background-position-y: -6px;
 }
 .site-wrapper-1 {
   background-image: url("../img/nerds-index-slide2.png");
   background-position-x: 398px;
-  background-position-y: 0px;
+  background-position-y: -6px;
 }
 .site-wrapper-2 {
   background-image: url("../img/nerds-index-slide3.png");
   background-position-x: 397px;
-  background-position-y: -2px;
+  background-position-y: -7px;
 }
 
   /*features*/
