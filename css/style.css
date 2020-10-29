@@ -1209,11 +1209,10 @@ padding-left: 0;
   opacity: 0.1;
 }
 .modal-login {
-  top: 200px;
-  bottom: auto;
   width: 960px;
   height: 590px;
   padding: 0 100px;
+  z-index: 100;
 }
 .modal-login h2 {
   font-size: 45px;
